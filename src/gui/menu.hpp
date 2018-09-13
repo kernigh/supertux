@@ -18,11 +18,11 @@
 #define HEADER_SUPERTUX_GUI_MENU_HPP
 
 #include <memory>
-#include <SDL.h>
 
 #include "math/vector.hpp"
 #include "video/color.hpp"
 #include "gui/menu_action.hpp"
+#include "video/sdl.hpp"
 
 class DrawingContext;
 class MenuItem;

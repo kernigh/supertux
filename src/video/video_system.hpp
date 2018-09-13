@@ -18,10 +18,10 @@
 #define HEADER_SUPERTUX_VIDEO_VIDEO_SYSTEM_HPP
 
 #include <string>
-#include <SDL.h>
 
 #include "math/size.hpp"
 #include "util/currenton.hpp"
+#include "video/sdl.hpp"
 #include "video/texture_ptr.hpp"
 
 class Lightmap;

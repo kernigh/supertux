@@ -16,12 +16,12 @@
 
 #include "video/sdl/sdl_painter.hpp"
 
-#include <SDL.h>
 #include <algorithm>
 
 #include "supertux/globals.hpp"
 #include "util/log.hpp"
 #include "video/drawing_request.hpp"
+#include "video/sdl.hpp"
 #include "video/sdl/sdl_texture.hpp"
 #include "video/sdl/sdl_video_system.hpp"
 #include "video/viewport.hpp"

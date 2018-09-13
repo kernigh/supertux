@@ -1,5 +1,5 @@
 //  SuperTux
-//  Copyright (C) 2006 Matthias Braun <matze@braunis.de>
+//  Copyright (C) 2018 Tobias Markus <tobbi.bugs@googlemail.com>
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -14,20 +14,13 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#ifndef HEADER_SUPERTUX_PHYSFS_PHYSFS_SDL_HPP
-#define HEADER_SUPERTUX_PHYSFS_PHYSFS_SDL_HPP
+#ifndef HEADER_SUPERTUX_VIDEO_SDL_HPP
+#define HEADER_SUPERTUX_VIDEO_SDL_HPP
 
-#include <string>
-
-#include "video/sdl.hpp"
-
-/** The returned SDL_RWops object must be freed with SDL_RWclose(),
-    SDL library functions have a flag to perform that call
-    automatically. Do not use 'delete' or 'free()' on it.
-
-    See: https://wiki.libsdl.org/SDL_RWclose */
-SDL_RWops* get_physfs_SDLRWops(const std::string& filename);
-
+#ifdef VCPKG_BUILD
+    #include <SDL2/SDL.h>
+#else
+    #include <SDL.h>
 #endif
 
-/* EOF */
+#endif

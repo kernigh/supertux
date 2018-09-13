@@ -19,9 +19,9 @@
 
 #include "video/lightmap.hpp"
 
-#include <SDL.h>
 #include <boost/optional.hpp>
 
+#include "video/sdl.hpp"
 #include "video/sdl/sdl_painter.hpp"
 
 class Color;
