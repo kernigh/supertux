@@ -19,7 +19,6 @@
 #include <config.h>
 #include <version.h>
 
-#include <SDL_image.h>
 #include <boost/filesystem.hpp>
 #include <boost/locale.hpp>
 #include <physfs.h>
@@ -66,6 +65,7 @@ extern "C" {
 #include "supertux/world.hpp"
 #include "util/file_system.hpp"
 #include "util/gettext.hpp"
+#include "video/sdl_image.hpp"
 #include "video/sdl_surface_ptr.hpp"
 #include "video/sdl_surface.hpp"
 #include "worldmap/worldmap.hpp"
