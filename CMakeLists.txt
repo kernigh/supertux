@@ -657,6 +657,10 @@ endif(WIN32 AND NOT VCPKG_BUILD)
 add_dependencies(supertux2_lib tinygettext)
 add_dependencies(supertux2_lib squirrel)
 
+if(VCPKG_BUILD)
+  target_include_directories(supertux2_lib PUBLIC ${CURL_INCLUDE_DIRS})
+endif()
+
 target_include_directories(supertux2_lib SYSTEM PUBLIC ${SDL2_INCLUDE_DIRS})
 target_include_directories(supertux2_lib SYSTEM PUBLIC ${SDL2IMAGE_INCLUDE_DIRS})
 if(VCPKG_BUILD)
